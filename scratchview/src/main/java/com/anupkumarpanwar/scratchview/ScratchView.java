@@ -26,6 +26,9 @@ import com.anupkumarpanwar.utils.BitmapUtils;
 
 public class ScratchView extends View {
 
+    /*Reveal drawable name*/
+    private String revealedDrawableName;
+
     public static final float STROKE_WIDTH = 12f;
     private static final float TOUCH_TOLERANCE = 4;
     /**
@@ -430,5 +433,12 @@ public class ScratchView extends View {
 
         void onRevealPercentChangedListener(ScratchView scratchView, float percent);
     }
+
+    public void setRevealedDrawableName(String name) {
+    this.revealedDrawableName = name;
+}
+
+public String getRevealedDrawableName() {
+    return revealedDrawableName;
 
 }
